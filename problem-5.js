@@ -1,6 +1,9 @@
 function canPay(changeArray, totalDue){
-    if((!Array.isArray(changeArray)) || (changeArray.length === 0)){
+    if(!Array.isArray(changeArray)){
         return 'Please, provide us array of numbers';
+    }
+    else if(changeArray.length === 0){
+        return 'Please, input numbers in an array';
     }
     else{
         let sumOfTk = 0;
@@ -31,7 +34,7 @@ function canPay(changeArray, totalDue){
         }
     }
 }
-const myMoney = [1,2,5];
+const myMoney = [1,5,5];
 // const myMoney = [1,5,5];
 const chipsPrice = 10;
 const result = canPay(myMoney, chipsPrice);
