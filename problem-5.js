@@ -31,7 +31,8 @@ function canPay(changeArray, totalDue){
         }
     }
 }
-const myMoney = [1,2,5];
+// const myMoney = [1,2,5];
+const myMoney = [1,5,5];
 const chipsPrice = 10;
 const result = canPay(myMoney, chipsPrice);
 console.log(result);
