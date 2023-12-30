@@ -31,6 +31,7 @@ function sortMaker(arr){
     }
 }
 const arr = [2,3];
+// const arr = [4,-2];
 const result = sortMaker(arr);
 console.log(result);
 
