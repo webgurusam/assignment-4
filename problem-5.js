@@ -1,10 +1,10 @@
 function canPay(changeArray, totalDue){
-    if(!Array.isArray(changeArray)){
+    if((!Array.isArray(changeArray)) || (changeArray.length === 0)){
         return 'Please, provide us array of numbers';
     }
     else{
         let sumOfTk = 0;
-        for(let tk of myMoney){
+        for(let tk of changeArray){
             if(typeof tk !== 'number'){
                 return 'Please, provide us a number';
             }
@@ -31,8 +31,8 @@ function canPay(changeArray, totalDue){
         }
     }
 }
-// const myMoney = [1,2,5];
-const myMoney = [1,5,5];
+const myMoney = [1,2,5];
+// const myMoney = [1,5,5];
 const chipsPrice = 10;
 const result = canPay(myMoney, chipsPrice);
 console.log(result);
