@@ -11,7 +11,7 @@ function matchFinder(string1, string2){
         }
     }
 }
-const string1 = 'John Doe';
-const string2 = 'ohn';
+const string1 = 'Javascript';
+const string2 = 'Code';
 const result = matchFinder(string1, string2);
 console.log(result);
